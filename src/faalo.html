@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="public/icon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Faalo</title>
+</head>
+
+<body class="bg-black font-poppins">
+    <header class="relative flex flex-wrap sm:justify-start sm:flex-nowrap bg-neutral-800 text-sm py-4">
+        <nav id="navbar" class="max-w-[80rem] w-full mx-auto px-2 sm:px-2 sm:flex sm:items-center sm:justify-between">
+            <div class="flex items-center justify-between">
+                <a class="flex-none text-xl text-purple-400 font-semibold focus:outline-hidden focus:opacity-80"
+                    href="index.html" aria-label="Brand">
+                    <div class="flex flex-row items-center gap-2">
+                        Maria Elisa <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="2" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z" />
+                        </svg>
+
+                    </div>
+
+                </a>
+                <div class="sm:hidden">
+                    <button type="button"
+                        class="hs-collapse-toggle relative size-9 flex justify-center cursor-pointer items-center gap-x-2 rounded-xl border border-gray-400 bg-neutral-800 text-gray-200 shadow-2xs hover:bg-neutral-600 focus:outline-hidden focus:bg-neutral-600 disabled:opacity-50 disabled:pointer-events-none"
+                        id="hs-navbar-example-collapse" aria-expanded="false" aria-controls="hs-navbar-example"
+                        aria-label="Toggle navigation" data-hs-collapse="#hs-navbar-example">
+                        <svg class="hs-collapse-open:hidden shrink-0 size-4" xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="3" x2="21" y1="6" y2="6" />
+                            <line x1="3" x2="21" y1="12" y2="12" />
+                            <line x1="3" x2="21" y1="18" y2="18" />
+                        </svg>
+                        <svg class="hs-collapse-open:block hidden shrink-0 size-4" xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 6 6 18" />
+                            <path d="m6 6 12 12" />
+                        </svg>
+                        <span class="sr-only">Toggle navigation</span>
+                    </button>
+                </div>
+            </div>
+            <div id="hs-navbar-example"
+                class="hidden hs-collapse overflow-hidden transition-all duration-300 basis-full grow sm:block"
+                aria-labelledby="hs-navbar-example-collapse">
+                <div class="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:ps-5">
+                    <a class="font-medium text-gray-200 hover:text-gray-400 focus:outline-hidden focus:text-gray-400 cursor-pointer"
+                        href="index.html#about">About me</a>
+                    <a class="font-medium text-gray-200 hover:text-gray-400 focus:outline-hidden focus:text-gray-400 cursor-pointer"
+                        href="index.html#tech">Technologies</a>
+                    <a class="font-medium text-gray-200 hover:text-gray-400 focus:outline-hidden focus:text-gray-400 cursor-pointer"
+                        href="index.html#projects">Projects</a>
+                    <a class="font-medium text-gray-200 hover:text-gray-400 focus:outline-hidden focus:text-gray-400 cursor-pointer"
+                        href="index.html#contact">Contact</a>
+                    <a class="font-medium text-gray-200 hover:text-gray-400 focus:outline-hidden focus:text-gray-400 cursor-pointer"
+                        href="public/currículo - MariaElisaLimaPedro.pdf">Résumé</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="p-10 md:lg:p-20">
+        <div class="grid grid-cols-1 md:lg:grid-cols-2 gap-4">
+            <div class="flex flex-col gap-2">
+                <p class="text-white font-semibold text-4xl">Faalo</p>
+
+                <p class="text-lg font-medium text-white">Faalo is a web application developed with
+                    <span class="text-indigo-300">TypeScript</span> and the <span class="text-indigo-300">MVC
+                        Pattern</span> as my final
+                    college project. It's a website designed for language learners,
+                    providing tools to support them throughout the language acquisition process, such as content and
+                    vocabulary management,
+                    file and link storage, notes, topic hierarchy organization, and an integrated translator.
+                </p>
+
+                <p class="text-purple-300 font-semibold text-2xl pt-4">Technology Stack</p>
+
+                <div class="flex flex-col gap-3 justify-center md:sm:w-1/2 lg:w-full">
+                    <p class="text-white font-semibold text-xl">Back-end</p>
+
+                    <div class="grid grid-cols-2 md:lg:grid-cols-5 gap-4">
+                        <div
+                            class="flex rounded-xl bg-[#1b1729] w-auto p-2 justify-center transition transform hover:-translate-y-1 duration-200 hover:shadow-2xl hover:shadow-violet-900">
+                            <img class="size-15"
+                                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nestjs/nestjs-original.svg"
+                                alt="">
+                        </div>
+
+                        <div
+                            class="flex rounded-xl bg-[#1b1729] w-auto p-2 justify-center transition transform hover:-translate-y-1 duration-200 hover:shadow-2xl hover:shadow-violet-900">
+                            <img class="size-15"
+                                src="https://camo.githubusercontent.com/f76ca013b330e2bffb000dfd1f5487432ead1d7c6f489b6051a5ac5853ea4c78/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f706f737467726573716c2f706f737467726573716c2d6f726967696e616c2e737667"
+                                alt="">
+                        </div>
+
+                        <div
+                            class="flex rounded-xl bg-[#1b1729] w-auto p-2 justify-center transition transform hover:-translate-y-1 duration-200 hover:shadow-2xl hover:shadow-violet-900">
+                            <img class="size-15"
+                                src="https://camo.githubusercontent.com/aef1e8177da912f4389c9892921107eb8b7c83cca94c1a8a7db5f3f68d017bea/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f646f636b65722f646f636b65722d6f726967696e616c2e737667"
+                                alt="">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="flex flex-col gap-3">
+                    <p class="text-white font-semibold text-xl pt-4">Front-end</p>
+
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+
+                        <div
+                            class="flex rounded-xl bg-[#1b1729] w-auto p-2 justify-center transition transform hover:-translate-y-1 duration-200 hover:shadow-2xl hover:shadow-violet-900 items-center">
+                            <img class="size-15"
+                                src="https://camo.githubusercontent.com/d01eac300b9bccab6003b35a3cbbc094698420d6f3ca533657640c1e37f651e2/68747470733a2f2f66696c65732e6272616e646c6f676f732e6e65742f7376672f7362587a56586e4c5a722f616e67756c61722d69636f6e2d6c6f676f2d6272616e646c6f676f732e6e65745f6d6b74326e617a7a312e737667"
+                                alt="angular">
+                        </div>
+
+                        <div
+                            class="flex rounded-xl bg-[#1b1729] w-auto p-2 justify-center transition transform hover:-translate-y-1 duration-200 hover:shadow-2xl hover:shadow-violet-900 items-center">
+                            <img class="size-15"
+                                src="https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/tailwindcss/tailwindcss-original.svg"
+                                alt="tailwindcss">
+                        </div>
+
+                        <div
+                            class="flex rounded-xl bg-[#1b1729] w-auto p-3 justify-center transition transform hover:-translate-y-1 duration-200 hover:shadow-2xl hover:shadow-violet-900 items-center">
+                            <img class="size-13" src="public/preline.png" alt="preline">
+                        </div>
+                    </div>
+
+                </div>
+
+                <p class="text-purple-300 font-semibold text-2xl pt-10">More About</p>
+
+                <ul class="list-disc pl-4">
+                    <li class="text-white hover:underline hover:text-purple-400">
+                        <a href="https://github.com/mariaelisalp/faalo">Back-end Repository</a>
+                    </li>
+
+                    <li class="text-white hover:underline hover:text-purple-400">
+                        <a href="https://github.com/mariaelisalp/faalo-frontend">Front-end Repository</a>
+                    </li>
+                </ul>
+
+                <p class="text-white font-semibold text-lg">Available on: <a href="https://www.faalo.site"
+                        rel="noopener noreferrer" class="text-purple-300 hover:underline">www.faalo.site</a></p>
+            </div>
+
+            <div class="flex flex-col gap-4 lg:p-4">
+                <figure
+                    class="ms-auto me-20 relative z-1 max-w-full w-3xl h-auto shadow-[0_2.75rem_3.5rem_-2rem_rgb(45_55_75_/_20%),_0_0_5rem_-2rem_rgb(45_55_75_/_15%)] rounded-b-lg">
+                    <div class="relative flex items-center max-w-3xl bg-gray-800 rounded-t-lg py-2 px-24">
+                        <div class="flex gap-x-1 absolute top-2/4 start-4 -translate-y-1">
+                            <span class="size-2 bg-gray-600 rounded-full"></span>
+                            <span class="size-2 bg-gray-600 rounded-full"></span>
+                            <span class="size-2 bg-gray-600 rounded-full"></span>
+                        </div>
+                        <div
+                            class="flex justify-center items-center size-full bg-gray-700 text-[.25rem] text-gray-400 rounded-sm sm:text-[.5rem]">
+                            www.faalo.site</div>
+                    </div>
+
+                    <div class="bg-gray-800 rounded-b-lg">
+                        <img class="max-w-full h-auto rounded-b-lg" src="public/faalo.png" alt="Browser Placeholder">
+                    </div>
+                </figure>
+
+                <figure
+                    class="ms-auto me-20 relative z-1 max-w-full w-3xl h-auto shadow-[0_2.75rem_3.5rem_-2rem_rgb(45_55_75_/_20%),_0_0_5rem_-2rem_rgb(45_55_75_/_15%)] rounded-b-lg">
+                    <div class="relative flex items-center max-w-3xl bg-gray-800 rounded-t-lg py-2 px-24">
+                        <div class="flex gap-x-1 absolute top-2/4 start-4 -translate-y-1">
+                            <span class="size-2 bg-gray-600 rounded-full"></span>
+                            <span class="size-2 bg-gray-600 rounded-full"></span>
+                            <span class="size-2 bg-gray-600 rounded-full"></span>
+                        </div>
+                        <div
+                            class="flex justify-center items-center size-full bg-gray-700 text-[.25rem] text-gray-400 rounded-sm sm:text-[.5rem]">
+                            www.faalo.site/home</div>
+                    </div>
+
+                    <div class="bg-gray-800 rounded-b-lg">
+                        <img class="max-w-full h-auto rounded-b-lg" src="public/faalohome.png"
+                            alt="Browser Placeholder">
+                    </div>
+                </figure>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../node_modules/preline/preline.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@source "./node_modules/preline/dist/*.js";
+@import "../node_modules/preline/variants.css";
+
+
+.animated-background {
+  background-size: 400%;
+
+  -webkit-animation: animation 8s ease infinite;
+  -moz-animation: animation 8s ease infinite;
+  animation: animation 6s ease infinite;
+}
+
+@keyframes animation {
+
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@layer utilities {
+  .font-poppins {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .font-sourcecode {
+    font-family: 'Source Code Pro', monospace;
+  }
+}
+
+@keyframes fade-in-left {
+  0% {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fade-in-left {
+  animation: fade-in-left 1s ease-out forwards;
+}
